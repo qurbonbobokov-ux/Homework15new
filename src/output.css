@@ -326,6 +326,9 @@
   .text-\[25px\] {
     font-size: 25px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[32px\] {
     font-size: 32px;
   }
@@ -468,6 +471,11 @@
       flex-direction: column;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:flex-row-reverse {
     @media (width >= 64rem) {
       flex-direction: row-reverse;
@@ -493,6 +501,11 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
@@ -511,6 +524,11 @@
   .lg\:py-1 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:text-\[32px\] {
+    @media (width >= 64rem) {
+      font-size: 32px;
     }
   }
 }
